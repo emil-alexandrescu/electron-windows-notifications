@@ -12,7 +12,7 @@ let _exports
 
 // Requiring native Windows stuff on a non-windows machine isn't a great idea,
 // so we just export no-ops with console warnings.
-if (process.platform !== 'win32' || !(win === '10.0' || win === '8.1' || win === '8')) {
+if (process.platform !== 'win32' || !(win === '10.0' || win === '8.1' || win === '8' || win === '7')) {
   _exports = {
     ToastDismissalReason: noopObject,
     ToastNotification: NoopClass,
